@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Informações de Pagamento</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Barra de navegação -->
+  <nav class="navbar navbar-dark bg-dark">
+    <a href="index.html" class="navbar-brand">Navegação</a>
+  </nav>
+
+  <!-- Conteúdo da página de pagamento -->
+  <div class="container mt-4">
+    <h1>Informações de Pagamento</h1>
+    <form>
+      <div class="form-group">
+        <label for="numeroCartao">Número do Cartão</label>
+        <input type="text" class="form-control" id="numeroCartao" placeholder="Digite o número do cartão">
+      </div>
+      <div class="form-group">
+        <label for="nomeTitular">Nome do Titular</label>
+        <input type="text" class="form-control" id="nomeTitular" placeholder="Digite o nome do titular do cartão">
+      </div>
+      <div class="form-group">
+        <label for="validade">Validade</label>
+        <input type="text" class="form-control" id="validade" placeholder="Digite a validade do cartão">
+      </div>
+      <div class="form-group">
+        <label for="cvv">CVV</label>
+        <input type="text" class="form-control" id="cvv" placeholder="Digite o código de segurança (CVV)">
+      </div>
+      <div class="form-group">
+        <label for="valor">Valor</label>
+        <input type="text" class="form-control" id="valor" placeholder="Digite o valor do pagamento">
+      </div>
+      <div class="form-group">
+        <label for="parcelas">Parcelas</label>
+        <select class="form-control" id="parcelas">
+          <option value="">Selecione o número de parcelas</option>
+          <option value="1">1x</option>
+          <option value="2">2x</option>
+          <option value="3">3x</option>
+          <option value="4">4x</option>
+        </select>
+      </div>
+      <a href="finalizacao.html" class="btn btn-primary">Finalizar</a>
+    </form>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

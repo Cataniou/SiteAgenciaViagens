@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Cadastro de Usuário</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Barra de navegação -->
+  <nav class="navbar navbar-dark bg-dark">
+    <a href="index.html" class="navbar-brand">Navegação</a>
+  </nav>
+
+  <!-- Conteúdo da página de cadastro -->
+  <div class="container mt-4">
+    <h1>Cadastro de Novo Usuário</h1>
+    <form>
+      <div class="form-group">
+        <label for="nome">Nome Completo</label>
+        <input type="text" class="form-control" id="nome" placeholder="Digite seu nome completo">
+      </div>
+      <div class="form-group">
+        <label for="email">E-mail</label>
+        <input type="email" class="form-control" id="email" placeholder="Digite seu e-mail">
+      </div>
+      <div class="form-group">
+        <label for="dataNascimento">Data de Nascimento</label>
+        <input type="date" class="form-control" id="dataNascimento">
+      </div>
+      <div class="form-group">
+        <label for="estado">Estado</label>
+        <input type="text" class="form-control" id="estado" placeholder="Digite seu estado">
+      </div>
+      <div class="form-group">
+        <label for="endereco">Endereço</label>
+        <input type="text" class="form-control" id="endereco" placeholder="Digite seu endereço">
+      </div>
+      <div class="form-group">
+        <label for="sexo">Sexo</label>
+        <select class="form-control" id="sexo">
+          <option value="">Selecione o sexo</option>
+          <option value="masculino">Masculino</option>
+          <option value="feminino">Feminino</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="categorias">Categorias de Interesse (Marque mais de uma)</label><br>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="praia" value="praia">
+          <label class="form-check-label" for="praia">Praia</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="campo" value="campo">
+          <label class="form-check-label" for="campo">Campo</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="nacionais" value="nacionais">
+          <label class="form-check-label" for="nacionais">Nacionais</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="internacionais" value="internacionais">
+          <label class="form-check-label" for="internacionais">Internacionais</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="serra" value="serra">
+          <label class="form-check-label" for="serra">Serra</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="cidade" value="cidade">
+          <label class="form-check-label" for="cidade">Cidade</label>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="login">Login</label>
+        <input type="text" class="form-control" id="login" placeholder="Digite seu login">
+      </div>
+      <div class="form-group">
+        <label for="senha">Senha</label>
+        <input type="password" class="form-control" id="senha" placeholder="Digite sua senha">
+      </div>
+      <button type="reset" class="btn btn-danger">Limpar</button>
+	  <a href="pagamento.html" class="btn btn-primary">Salvar</a>
+    </form>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
